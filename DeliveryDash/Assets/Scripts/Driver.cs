@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Driver : MonoBehaviour
 {
-    [SerializeField] float steerSpeed = 0.5f;
-    [SerializeField] float moveSpeed = 0.01f;
+    [SerializeField] float steerSpeed = 1.0f;
+    [SerializeField] float moveSpeed = 1.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class Driver : MonoBehaviour
         }
 
         float moveAmount = move * moveSpeed * Time.deltaTime;
-        float steerAmount = move * steerSpeed * Time.deltaTime;
+        float steerAmount = steer * steerSpeed * Time.deltaTime;
 
         transform.Translate(0, moveAmount, 0);
         transform.Rotate(0, 0, steerAmount);
