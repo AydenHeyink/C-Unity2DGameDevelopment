@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 public class CrashDetection : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticle;
+    PlayerController playerController;
+
+    private void Start()
+    {
+        playerController= FindFirstObjectByType<PlayerController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,6 +17,7 @@ public class CrashDetection : MonoBehaviour
 
         if (collision.gameObject.layer == layerIndex)
         {
+            playerController.DisableController();
             crashParticle.Play();
             Debug.Log("CrashDetection");
             Invoke("ReloadScene", 2.5f );

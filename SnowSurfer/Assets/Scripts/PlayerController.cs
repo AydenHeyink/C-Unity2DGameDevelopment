@@ -5,20 +5,35 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] float torqueAmount = 1f;
+    [SerializeField] float baseSpeed = 15f;
+    [SerializeField] float boostSpeed = 20f;
     
     InputAction moveAction;
     Rigidbody2D myRigidbody;
+    SurfaceEffector2D surfaceEffector2D;
+
+    Vector2 moveVector;
+    bool canControlPlayer = true;
 
     void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
         myRigidbody = GetComponent<Rigidbody2D>();
+        surfaceEffector2D= FindFirstObjectByType<SurfaceEffector2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 moveVector;
+        if (canControlPlayer)
+        {
+            RotatePlayer();
+            BoostPlayer();
+        }
+    }
+
+    void RotatePlayer()
+    {
         moveVector = moveAction.ReadValue<Vector2>();
 
         if (moveVector.x < 0)
@@ -30,5 +45,22 @@ public class PlayerController : MonoBehaviour
         {
             myRigidbody.AddTorque(-torqueAmount);
         }
+    }
+
+    private  void BoostPlayer()
+    {
+        if (moveVector.y > 0)
+        {
+            surfaceEffector2D.speed = boostSpeed;
+        }
+        else
+        {
+            surfaceEffector2D.speed = baseSpeed;
+        }
+    }
+
+    public void DisableController()
+    {
+        canControlPlayer= false;
     }
 }
