@@ -7,19 +7,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float torqueAmount = 1f;
     [SerializeField] float baseSpeed = 15f;
     [SerializeField] float boostSpeed = 20f;
-    
+
     InputAction moveAction;
     Rigidbody2D myRigidbody;
     SurfaceEffector2D surfaceEffector2D;
 
     Vector2 moveVector;
     bool canControlPlayer = true;
+    float previousRotation;
+    float totalRotation;
+    float flipCount;
 
     void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
         myRigidbody = GetComponent<Rigidbody2D>();
-        surfaceEffector2D= FindFirstObjectByType<SurfaceEffector2D>();
+        surfaceEffector2D = FindFirstObjectByType<SurfaceEffector2D>();
     }
 
     // Update is called once per frame
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
         {
             RotatePlayer();
             BoostPlayer();
+            CalculateFlips();
         }
     }
 
@@ -47,7 +51,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private  void BoostPlayer()
+    private void BoostPlayer()
     {
         if (moveVector.y > 0)
         {
@@ -57,6 +61,21 @@ public class PlayerController : MonoBehaviour
         {
             surfaceEffector2D.speed = baseSpeed;
         }
+    }
+
+    void CalculateFlips()
+    {
+        float currentRotation = transform.rotation.eulerAngles.z;
+
+        totalRotation += Mathf.DeltaAngle(previousRotation, currentRotation);
+        if (totalRotation > 360 || totalRotation < -360) 
+        {
+            flipCount++;
+            totalRotation= 0;
+            print(flipCount);
+        }
+
+        previousRotation= currentRotation;
     }
 
     public void DisableController()
