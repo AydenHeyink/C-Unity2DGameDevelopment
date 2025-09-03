@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     InputAction moveAction;
     Rigidbody2D myRigidbody;
     SurfaceEffector2D surfaceEffector2D;
+    ScoreManager scoreManager;
 
     Vector2 moveVector;
     bool canControlPlayer = true;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         myRigidbody = GetComponent<Rigidbody2D>();
         surfaceEffector2D = FindFirstObjectByType<SurfaceEffector2D>();
+        scoreManager = FindFirstObjectByType<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -68,13 +70,12 @@ public class PlayerController : MonoBehaviour
         float currentRotation = transform.rotation.eulerAngles.z;
 
         totalRotation += Mathf.DeltaAngle(previousRotation, currentRotation);
-        if (totalRotation > 360 || totalRotation < -360) 
+        if (totalRotation > 360 || totalRotation < -360)
         {
             flipCount++;
-            totalRotation= 0;
-            print(flipCount);
+            totalRotation = 0;
+            scoreManager.AddScore(100);
         }
-
         previousRotation= currentRotation;
     }
 
