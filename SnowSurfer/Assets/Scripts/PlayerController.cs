@@ -8,11 +8,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float baseSpeed = 15f;
     [SerializeField] float boostSpeed = 20f;
     [SerializeField] ParticleSystem powerupParticles;
+    [SerializeField] ScoreManager scoreManager;
 
     InputAction moveAction;
     Rigidbody2D myRigidbody;
     SurfaceEffector2D surfaceEffector2D;
-    ScoreManager scoreManager;
 
     Vector2 moveVector;
     bool canControlPlayer = true;
@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         myRigidbody = GetComponent<Rigidbody2D>();
         surfaceEffector2D = FindFirstObjectByType<SurfaceEffector2D>();
-        scoreManager = FindFirstObjectByType<ScoreManager>();
     }
 
     // Update is called once per frame
