@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Drver : MonoBehaviour
 {
-    [SerializeField] float steerSpeed = 1f;
-    [SerializeField] float moveSpeed = 0.01f;
+    [SerializeField] float steerSpeed = 150f;
+    [SerializeField] float moveSpeed = 20f;
 
     void Start()
     {
