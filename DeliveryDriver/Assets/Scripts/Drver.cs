@@ -6,12 +6,9 @@ public class Drver : MonoBehaviour
 {
     [SerializeField] float steerSpeed = 150f;
     [SerializeField] float moveSpeed = 20f;
+    [SerializeField] float slowSpeed = 15f;
+    [SerializeField] float boostSpeed = 30f;
 
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
@@ -19,5 +16,18 @@ public class Drver : MonoBehaviour
 
         transform.Rotate(0, 0, -steerAmount);
         transform.Translate(0, moveAmount, 0);    
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Boost") 
+        {
+            moveSpeed = boostSpeed;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        moveSpeed = slowSpeed;
     }
 }
