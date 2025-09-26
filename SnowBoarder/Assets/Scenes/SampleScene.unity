@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 171228698}
   - component: {fileID: 171228697}
   - component: {fileID: 171228700}
+  - component: {fileID: 171228701}
   m_Layer: 0
   m_Name: Henry
   m_TagString: Untagged
@@ -154,8 +155,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 15
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -282,6 +283,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6629915, y: 0.23817253}
   m_EdgeRadius: 0
+--- !u!114 &171228701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171228695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a426148e6f4a340a278668bccb9b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10
 --- !u!1 &205857673
 GameObject:
   m_ObjectHideFlags: 3
