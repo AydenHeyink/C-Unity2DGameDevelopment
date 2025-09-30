@@ -17,11 +17,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb2d.AddTorque(1);
+            rb2d.AddTorque(5);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.AddTorque(-1);
+            rb2d.AddTorque(-5);
         }
     }
 }

@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
+    [SerializeField] ParticleSystem crashParticles;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Ground")
         {
-            SceneManager.LoadScene("Level1");
+            crashParticles.Play();
+            Invoke("StartOver", 2f);
         }
+    }
+
+    void StartOver()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }
