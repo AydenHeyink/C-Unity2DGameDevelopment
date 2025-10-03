@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
     [SerializeField] float invokeWaitTime = 1.5f;
+    [SerializeField] AudioSource aSource;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            aSource.Play();
             Invoke("ReloadScene", invokeWaitTime);
+            
         }
     }
 

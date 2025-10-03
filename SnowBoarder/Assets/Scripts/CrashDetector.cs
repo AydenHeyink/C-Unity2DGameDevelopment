@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class CrashDetector : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] AudioSource aSource;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Ground")
         {
             crashParticles.Play();
+            aSource.Play();
             Invoke("StartOver", 2f);
         }
     }
