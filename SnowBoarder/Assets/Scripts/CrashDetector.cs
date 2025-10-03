@@ -8,17 +8,18 @@ public class CrashDetector : MonoBehaviour
     [SerializeField] ParticleSystem crashParticles;
     [SerializeField] AudioSource aSource;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Ground")
         {
+            FindObjectOfType<PlayerController>().DisableControls();
             crashParticles.Play();
             aSource.Play();
             Invoke("StartOver", 2f);
         }
     }
 
-    void StartOver()
+    public void StartOver()
     {
         SceneManager.LoadScene("Level1");
     }
