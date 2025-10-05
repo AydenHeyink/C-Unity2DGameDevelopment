@@ -7,14 +7,21 @@ public class CrashDetector : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashParticles;
     [SerializeField] AudioSource aSource;
+    bool hasCrashed;
+
+    private void Start()
+    {
+        hasCrashed = false;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Ground")
+        if (collision.tag == "Ground" && !hasCrashed)
         {
             FindObjectOfType<PlayerController>().DisableControls();
             crashParticles.Play();
             aSource.Play();
+            hasCrashed = true;
             Invoke("StartOver", 2f);
         }
     }
