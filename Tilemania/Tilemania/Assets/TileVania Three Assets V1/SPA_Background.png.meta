@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPA_Background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b2638d40baf724a86b49bcf184504a
+      internalID: -276378806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 116
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae1c9893e421024d9df8754e6a9b63c
+      internalID: -1854650217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 116
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138e6d343aabd70439f6b8d9f9d50435
+      internalID: -1666292402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 116
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33583d147ac8144faffe07b9333857c
+      internalID: 561270429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1153359498a2cc74b9ad90f9b3a46e7e
+      internalID: 753925224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 78
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca16c744ffa4014e837ca003829174b
+      internalID: 2084765758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 78
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa444d3fee13bac40ada79fdbbb99fa3
+      internalID: -1951213234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 78
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154188398b356384c81f0609c51cc542
+      internalID: -1685350187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89fa24666d10fb46b14d7188a134eb8
+      internalID: 565197852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93807e05183104d4ba0da27fe88b5097
+      internalID: 593539389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37c9d59bb5c3b8448b0821db9af0f41
+      internalID: -879798851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0de8f2dd4a14d43b98dd29571e107d
+      internalID: 2097074870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205bd4b3af2d38b4d94d4797c992c3dd
+      internalID: 1632037061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dc70f9fb485954cb2393702151b0b1
+      internalID: 852319381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989bef75aa68e11408c491a79a9a14bb
+      internalID: 1807968542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Background_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212257b303e668946bce4e6bbd1ab08a
+      internalID: -480790897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +442,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPA_Background_0: -276378806
+      SPA_Background_1: -1854650217
+      SPA_Background_10: -879798851
+      SPA_Background_11: 2097074870
+      SPA_Background_12: 1632037061
+      SPA_Background_13: 852319381
+      SPA_Background_14: 1807968542
+      SPA_Background_15: -480790897
+      SPA_Background_2: -1666292402
+      SPA_Background_3: 561270429
+      SPA_Background_4: 753925224
+      SPA_Background_5: 2084765758
+      SPA_Background_6: -1951213234
+      SPA_Background_7: -1685350187
+      SPA_Background_8: 565197852
+      SPA_Background_9: 593539389
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

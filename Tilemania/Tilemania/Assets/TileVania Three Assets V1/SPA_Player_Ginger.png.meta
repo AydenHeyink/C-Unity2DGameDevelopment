@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e628570051ec1e47a76efbc0b72c424
+      internalID: 614363377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3dda2be02ddb04281b1972110b99f2
+      internalID: 611619397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a5784b332bf634093a2215545b5853
+      internalID: -622856465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cd2ffaff3d25a45ae5997fb0e3c5b1
+      internalID: -2057830554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9b3dc5f93ce7d44882ef1ff143a6d6
+      internalID: 455937870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f177e8caecb13594eb66e252a8febdf6
+      internalID: -453036719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce39561e804866499669f73e674aa2f
+      internalID: 1711974848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e221e348f094d4bbb315f0a5a4cc7f
+      internalID: -591411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343ab56384d194347acce44005c6233c
+      internalID: -675447388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16b0745a0cb2194984eef771730ba5a
+      internalID: -1342729376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47d212d5452ae747a5085a1a1c9637a
+      internalID: -781012613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5a57a3691c07c42806ea67b6b6309f
+      internalID: 1602023306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78368b0592c8d24592c9792843ecb1a
+      internalID: 1255173303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_13
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2457ef23434a354db261e30de560813
+      internalID: -2022636591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018e3a40368d4db418021ef36a8e97f3
+      internalID: -1199578184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66da3b440897216458e838e826c127df
+      internalID: -1622022699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71f636ea59985c4ea434f4cb84b0353
+      internalID: -662862264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb70c8e43a2a00439b0052312ce070c
+      internalID: -15670363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624dca9abce318e47ba0098ad936e984
+      internalID: 1605517635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de69c8a39e70a544496f672fad177b65
+      internalID: -1205247426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a83b38cb99b0b94782727f3863cb637
+      internalID: -1964413427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16023a67de6b5445bb9d6a713107e43
+      internalID: 1054667349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_22
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1d85d9e1aebdb43b4cccf2daa5af22
+      internalID: 1777257481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_23
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7647cc0f68f6ec49a3e097e8aa8adc4
+      internalID: 983388420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dc6f79e3fa6494b9ee9a8b1e9e2d93
+      internalID: 1776319531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea1d877b55b22746bf1764a7cd747a3
+      internalID: 1158226584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_26
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0697a6940db794fbfa5a6134598a5b
+      internalID: -2144522372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_27
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b228710924e667f40a42dc64968f1de1
+      internalID: -19169028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Ginger_28
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20e132dc141c094b984734606f5f9f0
+      internalID: 502335589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +715,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPA_Player_Ginger_0: 614363377
+      SPA_Player_Ginger_1: 611619397
+      SPA_Player_Ginger_10: -781012613
+      SPA_Player_Ginger_11: 1602023306
+      SPA_Player_Ginger_12: 1255173303
+      SPA_Player_Ginger_13: -2022636591
+      SPA_Player_Ginger_14: -1199578184
+      SPA_Player_Ginger_15: -1622022699
+      SPA_Player_Ginger_16: -662862264
+      SPA_Player_Ginger_17: -15670363
+      SPA_Player_Ginger_18: 1605517635
+      SPA_Player_Ginger_19: -1205247426
+      SPA_Player_Ginger_2: -622856465
+      SPA_Player_Ginger_20: -1964413427
+      SPA_Player_Ginger_21: 1054667349
+      SPA_Player_Ginger_22: 1777257481
+      SPA_Player_Ginger_23: 983388420
+      SPA_Player_Ginger_24: 1776319531
+      SPA_Player_Ginger_25: 1158226584
+      SPA_Player_Ginger_26: -2144522372
+      SPA_Player_Ginger_27: -19169028
+      SPA_Player_Ginger_28: 502335589
+      SPA_Player_Ginger_3: -2057830554
+      SPA_Player_Ginger_4: 455937870
+      SPA_Player_Ginger_5: -453036719
+      SPA_Player_Ginger_6: 1711974848
+      SPA_Player_Ginger_7: -591411
+      SPA_Player_Ginger_8: -675447388
+      SPA_Player_Ginger_9: -1342729376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

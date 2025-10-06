@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095b4373c1626c548b7e742f26923200
+      internalID: 866907766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c4e4441e724ec4db2a44c2512e49c8
+      internalID: 1156111386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f08ca2f5311ad43be1624c667b0ea1
+      internalID: -1230405043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b910f5c3c43e7448c794651461f56d
+      internalID: 15973631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6229d3c8b89f0b144bdde3abfa8712ef
+      internalID: 1062793278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b685eb87089d24e8ac734071894f57
+      internalID: 217668142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9746cfa4b2177134fab15a7c7d4c7148
+      internalID: 951056018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0031d8580b11ca428c952d1ad6c8bfd
+      internalID: 31549369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0c00418a6304242ad55fdddb8ee50b
+      internalID: 799964280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355edfbd09681c3449b498fb39dac172
+      internalID: -1905749200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafea301036919b40a7bf7e6775c55fb
+      internalID: -1171066916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d22f4db1280f44429dfc6d87e914968
+      internalID: -1526645257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da14d275f0e2a5e48851d997ec6c19b5
+      internalID: -51395200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_13
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32bfc33ba6e53a49b947ff32fd1f748
+      internalID: 182029541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7395af5b1c6ebaf4595d0f7abb887ca8
+      internalID: 294141328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b68ec595649af45aa06454924b9c6d
+      internalID: 957149067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baefc778b4b6ec44b44575acb5bc34f
+      internalID: -818167721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c92223894374124bb7d8937ecb05516
+      internalID: -52771769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6355cc745934d7b4a941c0c81654a9d0
+      internalID: 301458000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe401dbd5d034a24c97cd35e6fb9acf3
+      internalID: 1608652044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6676dbdb3f04f97418123324baed1248
+      internalID: -140863885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33591935a12082f4aa95f937d1fbb6e7
+      internalID: -839055046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_22
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb4e551a7bbf7746ae6a76e14cc2269
+      internalID: -428772900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_23
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556fab851b1c7746818aa22ef32da03
+      internalID: -703423281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51ce9ecd1a029644a16bd2e0ecd8158
+      internalID: -1725249456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0316d951188e53340813562f8265c4ef
+      internalID: -842672719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_26
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b214e92237ed7644b107f2f1aaa3627
+      internalID: -536849443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_27
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5a31d5972796544b12b0e407f8e3dc
+      internalID: 1689289655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Player_Bronze_28
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c374a2ac6d269254298504f5dc925f79
+      internalID: -746013875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +715,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPA_Player_Bronze_0: 866907766
+      SPA_Player_Bronze_1: 1156111386
+      SPA_Player_Bronze_10: -1171066916
+      SPA_Player_Bronze_11: -1526645257
+      SPA_Player_Bronze_12: -51395200
+      SPA_Player_Bronze_13: 182029541
+      SPA_Player_Bronze_14: 294141328
+      SPA_Player_Bronze_15: 957149067
+      SPA_Player_Bronze_16: -818167721
+      SPA_Player_Bronze_17: -52771769
+      SPA_Player_Bronze_18: 301458000
+      SPA_Player_Bronze_19: 1608652044
+      SPA_Player_Bronze_2: -1230405043
+      SPA_Player_Bronze_20: -140863885
+      SPA_Player_Bronze_21: -839055046
+      SPA_Player_Bronze_22: -428772900
+      SPA_Player_Bronze_23: -703423281
+      SPA_Player_Bronze_24: -1725249456
+      SPA_Player_Bronze_25: -842672719
+      SPA_Player_Bronze_26: -536849443
+      SPA_Player_Bronze_27: 1689289655
+      SPA_Player_Bronze_28: -746013875
+      SPA_Player_Bronze_3: 15973631
+      SPA_Player_Bronze_4: 1062793278
+      SPA_Player_Bronze_5: 217668142
+      SPA_Player_Bronze_6: 951056018
+      SPA_Player_Bronze_7: 31549369
+      SPA_Player_Bronze_8: 799964280
+      SPA_Player_Bronze_9: -1905749200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
