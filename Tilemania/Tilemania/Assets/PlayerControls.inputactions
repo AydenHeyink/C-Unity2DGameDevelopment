@@ -3,84 +3,12 @@
     "maps": [
         {
             "name": "Player",
-            "id": "b8138fcd-66c6-4ae5-9a87-eae4bdacd3a3",
+            "id": "57591efc-4fa1-4321-ad38-28e6ef57c41b",
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Value",
-                    "id": "5e44c1a3-8bef-4dda-96d0-4e7ffc2421d9",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "2D Vector",
-                    "id": "8781dacc-6f90-4d56-bc88-cb50f46f2ca7",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "f386fd11-dbb2-429b-8173-fd33cb891740",
-                    "path": "w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "bee49a8a-ec4f-4860-b06d-5db8a9faeec6",
-                    "path": "d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "98a9bbfd-8668-42dd-bf93-3e38320927d7",
-                    "path": "a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "f07a3858-23f1-4199-9ac7-38895b2b4e76",
-                    "path": "d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                }
-            ]
-        },
-        {
-            "name": "UI",
-            "id": "76b8b1fa-6a33-4fca-9cdb-428036fc46a7",
-            "actions": [
-                {
-                    "name": "New action",
                     "type": "Button",
-                    "id": "9409764a-8fe0-4618-a833-82054b7a1388",
+                    "id": "6c5f3ad6-5fba-4838-a46a-8a06d6c093c2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -90,12 +18,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "d93dd311-ded8-413e-a4f3-8573ff265986",
+                    "id": "22101f92-9c86-4e3d-84a7-feac00406b3b",
                     "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,25 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Vector2 moveInput;
+    private PlayerInput playerInput;
+    private InputAction moveAction;
+    private Rigidbody2D rb;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float runSpeed = 8f;
+
+    private Vector2 moveInput;
+
+    void Awake()
+    {
+        playerInput = GetComponent<PlayerInput>();
+
+        moveAction = new InputAction(type: InputActionType.Value, binding: "<Keyboard>/w");
+        moveAction.AddCompositeBinding("2DVector")
+            .With("Up", "<Keyboard>/w")
+            .With("Down", "<Keyboard>/s")
+            .With("Left", "<Keyboard>/a")
+            .With("Right", "<Keyboard>/d");
+
+        moveAction.Enable();
+    }
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Run();
     }
 
-    void OnMove(InputValue value)
+    void Run()
     {
-        moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
+        Vector2 playerVelocity = new Vector2(moveInput.x, 0);
+        moveInput = moveAction.ReadValue<Vector2>();
+        rb.velocity = moveInput * moveSpeed;
     }
 }
