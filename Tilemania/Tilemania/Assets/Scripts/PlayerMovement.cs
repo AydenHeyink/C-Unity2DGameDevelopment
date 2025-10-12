@@ -5,67 +5,94 @@ public class PlayerMovement : MonoBehaviour
 {
     private PlayerInput playerInput;
     private InputAction moveAction;
+    private InputAction jumpAction;
+
     private Rigidbody2D rb;
-    Animator myAnimator;
+    private Animator myAnimator;
+    private CapsuleCollider2D myCapsuleCollider;
+    float gravityScaleAtStart;
+
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float runSpeed = 8f;
     [SerializeField] private float jumpSpeed = 20f;
+    [SerializeField] private float climbSpeed = 3f;
 
     private Vector2 moveInput;
 
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        myAnimator= GetComponent<Animator>();
+        myAnimator = GetComponent<Animator>();
+        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        gravityScaleAtStart = rb.gravityScale;
 
-        moveAction = new InputAction(type: InputActionType.Value, binding: "<Keyboard>/w");
+        // Movement input
+        moveAction = new InputAction(type: InputActionType.Value);
         moveAction.AddCompositeBinding("2DVector")
             .With("Up", "<Keyboard>/w")
             .With("Down", "<Keyboard>/s")
             .With("Left", "<Keyboard>/a")
-            .With("Right", "<Keyboard>/d")
-            .With("Jump", "<Keyboard>/space")
-            ;
-
+            .With("Right", "<Keyboard>/d");
         moveAction.Enable();
-    }
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
+        // Jump input
+        jumpAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/space");
+        jumpAction.performed += ctx => OnJump(ctx);
+        jumpAction.Enable();
     }
 
     void Update()
     {
+        // Read movement input
+        moveInput = moveAction.ReadValue<Vector2>();
+
         Run();
+        FlipSprite();
+        OnClimb();
+    }
+
+    void FixedUpdate()
+    {
+        // Apply horizontal velocity in FixedUpdate
+        rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
     }
 
     void Run()
     {
-        Vector2 playerVelocity = new Vector2(moveInput.x, 0);
-        moveInput = moveAction.ReadValue<Vector2>();
-        rb.velocity = moveInput * moveSpeed;
-        bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-
+        // Horizontal velocity is handled in FixedUpdate, just update animator here
+        bool hasHorizontalSpeed = Mathf.Abs(moveInput.x) > 0.01f;
         myAnimator.SetBool("isRunning", hasHorizontalSpeed);
     }
 
     void FlipSprite()
     {
-        bool hasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-
-        if (hasHorizontalSpeed)
+        if (Mathf.Abs(moveInput.x) > 0.01f)
         {
-            transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
-
+            transform.localScale = new Vector2(Mathf.Sign(moveInput.x), 1f);
         }
     }
 
-    void OnJump(InputValue value)
+    void OnJump(InputAction.CallbackContext context)
     {
-        if (value.isPressed)
+        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+            return;
+
+        if (context.ReadValue<float>() > 0)
         {
-            rb.velocity += new Vector2(0f, jumpSpeed);
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed); // set jump
+            myAnimator.SetTrigger("Jump");
         }
+    }
+
+    void OnClimb()
+    {
+        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            rb.gravityScale = gravityScaleAtStart;
+            return;
+        }
+        rb.gravityScale = 0;
+
+        rb.velocity = new Vector2(rb.velocity.x, moveInput.y * climbSpeed);
     }
 }
