@@ -13,9 +13,12 @@ public class PlayerMovement : MonoBehaviour
     float gravityScaleAtStart;
     BoxCollider2D myFeetCollider;
 
+    bool isAlive = true;
+
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpSpeed = 20f;
     [SerializeField] private float climbSpeed = 3f;
+    [SerializeField] Vector2 deathKick = new Vector2(10f, 20f);
 
     private Vector2 moveInput;
 
@@ -48,9 +51,11 @@ public class PlayerMovement : MonoBehaviour
         // Read movement input
         moveInput = moveAction.ReadValue<Vector2>();
 
+        if (!isAlive) { return; }
         Run();
         FlipSprite();
         OnClimb();
+        Die();
     }
 
     void FixedUpdate()
@@ -100,5 +105,20 @@ public class PlayerMovement : MonoBehaviour
 
         bool hasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("isClimbing", hasVerticalSpeed);
+    }
+
+    void Die()
+    {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dying");
+            rb.velocity = DeathKick();
+        }
+    }
+
+    Vector2 DeathKick()
+    {
+        return deathKick;
     }
 }
