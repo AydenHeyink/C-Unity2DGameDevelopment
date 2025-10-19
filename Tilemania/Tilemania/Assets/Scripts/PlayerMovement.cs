@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction shootAction;
 
     private Rigidbody2D rb;
     private Animator myAnimator;
@@ -47,6 +48,10 @@ public class PlayerMovement : MonoBehaviour
         jumpAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/space");
         jumpAction.performed += ctx => OnJump(ctx);
         jumpAction.Enable();
+
+        shootAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/leftButton");
+        shootAction.performed += ctx => OnAttack(ctx);
+        shootAction.Enable();
     }
 
     void Update()
@@ -125,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
         return deathKick;
     }
 
-    void OnAttack()
+    void OnAttack(InputAction.CallbackContext context)
     {
         if (!isAlive) { return; }
         Instantiate(bullet, myGun.transform.position, Quaternion.identity);

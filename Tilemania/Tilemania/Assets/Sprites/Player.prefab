@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4474789296365018120}
   - component: {fileID: 8285596484076212663}
   - component: {fileID: 204151032838224070}
+  - component: {fileID: 5391014786357269473}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -231,6 +232,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.76916623, y: 0.88169765}
   m_EdgeRadius: 0
+--- !u!70 &5391014786357269473
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482854892093442492}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.029133797, y: -0.036417007}
+  m_Size: {x: 0.7572193, y: 0.927166}
+  m_Direction: 0
 --- !u!1 &8098969996463144671
 GameObject:
   m_ObjectHideFlags: 0
