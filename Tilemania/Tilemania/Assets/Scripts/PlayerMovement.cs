@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float climbSpeed = 3f;
     [SerializeField] Vector2 deathKick = new Vector2(10f, 20f);
 
+    [SerializeField] GameObject bullet;
+    [SerializeField] GameObject myGun;
+
     private Vector2 moveInput;
 
     void Awake()
@@ -120,5 +123,11 @@ public class PlayerMovement : MonoBehaviour
     Vector2 DeathKick()
     {
         return deathKick;
+    }
+
+    void OnAttack()
+    {
+        if (!isAlive) { return; }
+        Instantiate(bullet, myGun.transform.position, Quaternion.identity);
     }
 }
