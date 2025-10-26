@@ -1,13 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
+    [SerializeField] int playerLives;
+
     private void Awake()
     {
         // Create our Singleton
-        int numberGameSessions = FindObjectOfType<GameSession>(FindObjectsSortMode.None).Length;
+        int numberGameSessions = FindObjectsByType<GameSession>(FindObjectsSortMode.None).Length;
 
         if (numberGameSessions > 1)
         {
@@ -17,6 +21,31 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    public void ProcessPlayerDeath()
+    {
+        if (playerLives > 1) 
+        {
+            TakeLife(); 
+        }
+        else
+        {
+            ResetGameSession(); 
+        }
+    }
+
+    void TakeLife()
+    {
+        playerLives--;
+        int currentIndexScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndexScene);
+    }
+
+    void ResetGameSession()
+    {
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
 
     // When player dies, do things
