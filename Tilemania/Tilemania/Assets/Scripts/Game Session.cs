@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives;
-
+    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] TextMeshProUGUI scoreText;
+ 
     private void Awake()
     {
         // Create our Singleton
@@ -40,6 +42,7 @@ public class GameSession : MonoBehaviour
         playerLives--;
         int currentIndexScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentIndexScene);
+        livesText.text = playerLives.ToString();
     }
 
     void ResetGameSession()
@@ -55,7 +58,6 @@ public class GameSession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
