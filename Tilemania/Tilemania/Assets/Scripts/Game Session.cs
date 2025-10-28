@@ -7,6 +7,8 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives;
+    [SerializeField] int score;
+
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
  
@@ -37,6 +39,12 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    public void AddToScore(int value)
+    {
+        score += value;
+        scoreText.text = score.ToString();
+    }
+
     void TakeLife()
     {
         playerLives--;
@@ -58,6 +66,8 @@ public class GameSession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        livesText.text = playerLives.ToString();
+        scoreText.text = score.ToString();
     }
 
     // Update is called once per frame
