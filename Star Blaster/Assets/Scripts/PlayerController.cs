@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float upperBoundPadding;
     [SerializeField] float downBoundPadding;
 
+    Shooter playerShooter;
+    
     InputAction moveAction;
+    InputAction fireAction;
+
     Vector2 moveInput;
     PlayerInput playerInput;
 
@@ -25,10 +29,13 @@ public class PlayerController : MonoBehaviour
     {
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["Move"];
+        fireAction = playerInput.actions["Fire"];
+
     }
 
     private void Start()
     {
+        playerShooter = GetComponent<Shooter>();
         Camera mainCamera = Camera.main;
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0,0));
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1,1));
@@ -36,7 +43,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();    
+        MovePlayer();   
+        FireShooter();
     }
 
     void MovePlayer()
@@ -53,5 +61,10 @@ public class PlayerController : MonoBehaviour
             maxBounds.y - upperBoundPadding);
 
         transform.position = newPos;
+    }
+
+    void FireShooter()
+    {
+        playerShooter.isFiring = fireAction.IsPressed();
     }
 }

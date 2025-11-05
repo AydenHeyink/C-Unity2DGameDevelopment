@@ -444,8 +444,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 599440397045362778, guid: 3f5c31247d1cf104bbe9bcb90a7a519c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5201711468262367475}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5c31247d1cf104bbe9bcb90a7a519c, type: 3}
+--- !u!1 &5201711468262367474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 599440397045362778, guid: 3f5c31247d1cf104bbe9bcb90a7a519c, type: 3}
+  m_PrefabInstance: {fileID: 5201711468262367473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5201711468262367475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201711468262367474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897e33cd36cadb248b43669510310ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  fireRate: 0.2
+  isFiring: 0
 --- !u!1001 &5505065056597385352
 PrefabInstance:
   m_ObjectHideFlags: 0
