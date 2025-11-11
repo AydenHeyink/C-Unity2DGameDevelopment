@@ -18,9 +18,12 @@ public class Shooter : MonoBehaviour
 
     [HideInInspector] public bool isFiring;
     Coroutine fireCoroutine;
+    AudioManager audioManager;
 
     private void Start()
     {
+        audioManager = FindFirstObjectByType<AudioManager>();
+
         if (useAI)
         {
             isFiring = true;
@@ -54,6 +57,8 @@ public class Shooter : MonoBehaviour
 
             float waitTime = Random.Range(baseFireRate - fireRateVariance, baseFireRate + fireRateVariance);
             waitTime = Mathf.Clamp(waitTime, minimumFireRate, float.MaxValue);
+
+            audioManager.PlayShootingSFX();
 
             yield return new WaitForSeconds(baseFireRate);
         }

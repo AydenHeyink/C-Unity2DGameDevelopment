@@ -7,6 +7,16 @@ public class Health : MonoBehaviour
     [SerializeField] int health = 50;
     [SerializeField] ParticleSystem hitParticles;
 
+    [SerializeField] bool applyCameraShake;
+    CameraShake cameraShake;
+    AudioManager audioManager;
+
+    private void Start()
+    {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
+        audioManager = FindFirstObjectByType<AudioManager>();
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if we hit a damage dealer
@@ -18,6 +28,11 @@ public class Health : MonoBehaviour
             TakeDamage(damageDealer.GetDamage());
             PlayHitParticles();
             damageDealer.Hit();
+
+            if (applyCameraShake) 
+            { 
+                cameraShake.Play();
+            }
         }
     }
 
@@ -36,7 +51,7 @@ public class Health : MonoBehaviour
         if (hitParticles != null) 
         { 
             ParticleSystem particles = Instantiate(hitParticles, transform.position, Quaternion.identity);
-            Destroy(particles, particles.main.duration, particles.main.startLifetime.constantMax);
+            //Destroy(particles, particles.main.duration, particles.main.startLifetime.constantMax);
         }
     }
 }
