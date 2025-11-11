@@ -8,9 +8,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip shootingClip;
     [SerializeField] [Range(0, 1)] float shootingVolume = 1;
 
-    [Header("Shooting SFX")]
+    [Header("Damage SFX")]
     [SerializeField] AudioClip damageClip;
     [SerializeField][Range(0, 1)] float damageVolume = 1;
+
+    [SerializeField] AudioClip music;
+    [SerializeField][Range(0, 1)] float musicVolume = 1;
+    
 
     public void PlayShootingSFX()
     {
