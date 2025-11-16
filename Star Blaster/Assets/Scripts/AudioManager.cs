@@ -14,7 +14,34 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] AudioClip music;
     [SerializeField][Range(0, 1)] float musicVolume = 1;
-    
+
+    public static AudioManager instance;
+    static public AudioManager GetInstance()
+    {
+        return instance;
+    }
+
+    private void Awake()
+    {
+        ManageSingleton();
+    }
+
+    void ManageSingleton()
+    {
+        //int instanceCount = FindObjectsByType<AudioManager>(FindObjectsSortMode.None).Length;
+
+        //if (instanceCount > 1) 
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);        
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     public void PlayShootingSFX()
     {
