@@ -8,6 +8,22 @@ public class ScoreKeeper : MonoBehaviour
     private int currentScore;
     [SerializeField] TextMeshProUGUI text;
 
+    public static ScoreKeeper instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Update()
     {
         text.text = currentScore.ToString();
