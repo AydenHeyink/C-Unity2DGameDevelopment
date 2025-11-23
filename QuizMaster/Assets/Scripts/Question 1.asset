@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: What is an integer?
+  answers:
+  - 'An array of chars '
+  - A single numerical value
+  - An instantation of a class
+  - A canvas
+  correctAnswerIndex: 1

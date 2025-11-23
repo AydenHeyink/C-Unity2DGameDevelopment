@@ -7,19 +7,23 @@ public class QuestionSO : ScriptableObject
 {
     [TextArea(2, 6)]
     [SerializeField] string question = "Enter new question text here";
+    [SerializeField] string[] answers = new string[4];
+    [SerializeField] int correctAnswerIndex;
 
     public string GetQuestion()
     {
         return question;
     }
-}
 
-public class Test
-{
-    QuestionSO questionSO;
-
-    void TestA()
+    public int GetCorrectAnswerIndex() 
     {
-        string questionText = questionSO.GetQuestion();
+        return correctAnswerIndex;
+    }
+
+    public string GetAnswer(int index)
+    {
+        return answers[index];
     }
 }
+
+
