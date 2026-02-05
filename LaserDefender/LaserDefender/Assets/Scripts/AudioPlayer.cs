@@ -20,7 +20,6 @@ public class AudioPlayer : MonoBehaviour
     public void PlayDamageClip()
     {
         PlayClip(damageClip, damageVolume);
-
     }
 
     void PlayClip(AudioClip clip, float volume)
