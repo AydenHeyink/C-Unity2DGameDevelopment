@@ -884,6 +884,7 @@ GameObject:
   - component: {fileID: 1115659080}
   - component: {fileID: 1115659079}
   - component: {fileID: 1115659078}
+  - component: {fileID: 1115659082}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -974,6 +975,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1115659082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115659077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240b0c2755a87624db458672f1f0813b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 1495228804}
+  playerHealth: {fileID: 1568951704949055142}
+  scoreText: {fileID: 228040637}
 --- !u!1 &1219120848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,14 +1562,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568951704949055141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229fc206538bc6f4b824ebf7cc59a506, type: 3}
+  m_Script: {fileID: 11500000, guid: e82f9da1c1df56141a4555e17a0cc486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  paddingLeft: 0.5
-  paddingRight: 0.5
-  paddingTop: 5
-  paddingBottom: 2
+  isPlayer: 1
+  health: 50
+  score: 50
+  explosionFX: {fileID: 5876800299133263414}
+  applyCameraShake: 0
 --- !u!1001 &2427117037449438933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1668,6 +1684,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92472210a8609fd44b9927b5e5a9bba2, type: 3}
+--- !u!198 &5876800299133263414 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8272617531022713126, guid: 92472210a8609fd44b9927b5e5a9bba2, type: 3}
+  m_PrefabInstance: {fileID: 5876800299133263413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8969913226254222903
 PrefabInstance:
   m_ObjectHideFlags: 0
