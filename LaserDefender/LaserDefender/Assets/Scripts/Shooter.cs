@@ -21,9 +21,14 @@ public class Shooter : MonoBehaviour
     AudioPlayer audioPlayer;
 
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         audioPlayer = GetComponent<AudioPlayer>();
+    }
+
+    void Start()
+    {
         if (useAI)
         {
             isFiring = true;
@@ -67,7 +72,8 @@ public class Shooter : MonoBehaviour
                                                       baseFiringRate + firingRateVariance);
             timeToNextProjectile = Mathf.Clamp(timeToNextProjectile, baseFiringRate, float.MaxValue);
 
-            //audioPlayer.PlayShootingClip();
+            audioPlayer.PlayShootingClip();
+            audioPlayer.GetInstance().PlayShootingClip();
 
             yield return new WaitForSeconds(timeToNextProjectile);
         }    
