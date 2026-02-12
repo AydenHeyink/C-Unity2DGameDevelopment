@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    ScoreKeeper scoreKeeper;
+
+    private void Awake()
+    {
+        scoreKeeper= FindObjectOfType<ScoreKeeper>();
+    }
+
     public void LoadGame()
     {
+        scoreKeeper.ResetScore();
         StartCoroutine(WaitAndLoad("SampleScene", 1));
     }
 
